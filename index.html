@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lift Simulation</title>
+        <link rel="stylesheet" href="/styles.css" />
+    </head>
+    <body>
+        <h1 class="pageTitle">Lift Simulation</h1>
+
+        <form
+            name="form"
+            id="lift-details"
+            onsubmit="return false"
+            class="form"
+        >
+            <div class="inputField">
+                <label for="floors" class="inputLabel"
+                    >Enter number of floors :
+                </label>
+                <input
+                    type="number"
+                    name="floors"
+                    id="input-floors"
+                    class="floors"
+                    required
+                />
+            </div>
+            <div class="inputField">
+                <label for="lifts" class="inputLabel"
+                    >Enter number of lifts :
+                </label>
+                <input
+                    type="number"
+                    name="lifts"
+                    id="input-lifts"
+                    class="lifts"
+                    required
+                />
+            </div>
+
+            <button type="submit" id="submit-button" class="submitBtn">
+                Submit
+            </button>
+
+            <div id="output-text" class="outputMsg"></div>
+        </form>
+
+        <div id="floor-lift-display"></div>
+
+        <script src="/app.js"></script>
+    </body>
+</html>
